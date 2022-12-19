@@ -1,3 +1,40 @@
+@font-face {
+	font-family: "Roboto Mono";
+	font-style: normal;
+	font-weight: 400;
+	font-display: optional;
+	src: url("/fonts/RobotoMono-Regular.ttf") format(truetype);
+}
+@font-face {
+	font-family: "Helvetica";
+	font-style: normal;
+	font-weight: 400;
+	font-display: optional;
+	src: url("/fonts/Helvetica.ttf") format(truetype);
+}
+@font-face {
+	font-family: "Helvetica";
+	font-style: normal;
+	font-weight: 700;
+	font-display: optional;
+	src: url("/fonts/Helvetica-Bold.ttf") format(truetype);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply font-bold text-9xl text-teal-50 opacity-25 text-right;
+	}
+	h2 {
+		@apply font-bold text-7xl text-teal-200 text-left;
+	}
+	h3 {
+		@apply font-mono font-normal text-2xl text-rose-500 text-left;
+	}
+	p {
+		@apply font-normal text-xl text-teal-50 text-left;
+	}
+}
