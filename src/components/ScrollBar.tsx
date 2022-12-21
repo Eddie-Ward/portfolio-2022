@@ -6,7 +6,7 @@ interface ScrollBarProps {
 }
 
 const ScrollBar = ({ height, color }: ScrollBarProps) => {
-	return <div className={"w-full " + `${typeof height === "number" ? `h-[${height}px]` : "h-screen"} bg-${color}`} />;
+	return <div className={"w-full " + `${typeof height === "number" ? `h-[${height}px]` : "h-screen"} ${color}`} />;
 };
 
 export default ScrollBar;

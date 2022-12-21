@@ -1,10 +1,11 @@
 import React from "react";
+import PageHeader from "../components/PageHeader";
 
 const Intro = () => {
 	return (
 		<>
-			<h1 className="font-sans font-bold text-9xl mx-28 mt-20 text-right text-teal-50 opacity-25">00 INTRO</h1>
-			<main className="flex flex-col gap-10 mx-28">
+			<PageHeader title={"00 INTRO"} />
+			<article className="flex flex-col gap-10 mx-28 h-screen">
 				<section className="flex flex-col gap-4 items-start">
 					<h3>Hello, I'm</h3>
 					<h2>Edward Liew.</h2>
@@ -20,7 +21,7 @@ const Intro = () => {
 				<button className="max-w-[10rem] h-12 rounded-lg border-solid border-teal-200 border-4 text-teal-200 text-xl">
 					Resume
 				</button>
-			</main>
+			</article>
 		</>
 	);
 };
