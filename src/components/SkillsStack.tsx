@@ -1,5 +1,5 @@
 import React from "react";
-import { SVGTypescript } from "../assets/svgs";
+import SkillsRow from "./SkillsRow";
 
 const ICONS_PREFERRED = [
 	"typescriptLogo.svg",
@@ -7,23 +7,23 @@ const ICONS_PREFERRED = [
 	"tailwindLogo.svg",
 	"nextJSLogo.svg",
 	"postgresLogo.svg",
-] as const;
+];
+
+const ICONS_KNOW_01 = [
+	"javascriptLogo.svg",
+	"reduxLogo.svg",
+	"materialUILogo.svg",
+	"styledcomponentsLogo.svg",
+	"threeJSLogo.svg",
+];
 
 const SkillsStack = () => {
 	return (
 		<aside className="max-w-md mt-20 flex flex-col gap-4 p-8 rounded-2xl border-4 border-solid border-teal-200">
 			<h4>Preferred</h4>
-			<div className="flex gap-4">
-				{ICONS_PREFERRED.map((path) => (
-					<div className="w-16 h-16 bg-teal-200 relative rounded-lg" key={path}>
-						<img
-							src={`/assets/${path}`}
-							className="absolute top-1/2 left-1/2 z-[1] -translate-x-1/2 -translate-y-1/2"
-						/>
-					</div>
-				))}
-			</div>
+			<SkillsRow svgArr={ICONS_PREFERRED} />
 			<h4>Know</h4>
+			<SkillsRow svgArr={ICONS_KNOW_01} />
 			<h4>Other</h4>
 		</aside>
 	);

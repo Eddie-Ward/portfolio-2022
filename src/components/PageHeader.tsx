@@ -5,7 +5,13 @@ interface PageHeaderProps {
 }
 
 const PageHeader = ({ title }: PageHeaderProps) => {
-	return <h1 className="font-sans font-bold text-9xl mx-28 mt-20 text-right text-teal-50 opacity-25">{title}</h1>;
+	return (
+		<h1
+			className="font-sans font-bold text-9xl mt-20 text-right text-teal-50 opacity-25"
+			style={{ marginTop: "calc(min(5rem, 10vh))" }}>
+			{title}
+		</h1>
+	);
 };
 
 export default PageHeader;

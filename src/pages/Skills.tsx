@@ -4,9 +4,9 @@ import SkillsStack from "../components/SkillsStack";
 
 const Skills = () => {
 	return (
-		<>
+		<article className="mx-28 h-screen">
 			<PageHeader title={"01 SKILLS"} />
-			<div className="flex gap-32 mx-28 h-screen">
+			<div className="flex gap-32">
 				<article className="flex flex-col gap-10">
 					<section className="flex flex-col gap-4 items-start">
 						<h2>My Stack</h2>
@@ -21,7 +21,7 @@ const Skills = () => {
 				</article>
 				<SkillsStack />
 			</div>
-		</>
+		</article>
 	);
 };
 

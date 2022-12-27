@@ -3,9 +3,9 @@ import PageHeader from "../components/PageHeader";
 
 const Intro = () => {
 	return (
-		<>
+		<article className="mx-28 h-screen">
 			<PageHeader title={"00 INTRO"} />
-			<article className="flex flex-col gap-10 mx-28 h-screen">
+			<div className="flex flex-col gap-10">
 				<section className="flex flex-col gap-4 items-start">
 					<h3>Hello, I'm</h3>
 					<h2>Edward Liew.</h2>
@@ -21,8 +21,8 @@ const Intro = () => {
 				<button className="max-w-[10rem] h-12 rounded-lg border-solid border-teal-200 border-4 text-teal-200 text-xl">
 					Resume
 				</button>
-			</article>
-		</>
+			</div>
+		</article>
 	);
 };
 
