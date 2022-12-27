@@ -12,7 +12,7 @@ function App() {
 			<Skills />
 			<div className="absolute w-2 top-0 left-0 z-10 bg-black">
 				{SCROLL_BAR_COLORS.map((_, i) => (
-					<ScrollBar height={SCROLL_BAR_HEIGHTS[i]} color={SCROLL_BAR_COLORS[i]} />
+					<ScrollBar height={SCROLL_BAR_HEIGHTS[i]} color={SCROLL_BAR_COLORS[i]} key={i} />
 				))}
 			</div>
 		</>
